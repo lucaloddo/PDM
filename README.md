@@ -15,6 +15,6 @@ In questo progetto si è deciso di sviluppare inizialmente quattro sezioni per l
 
 ## Autori
 
-Luca Loddo
-Matteo Kolyszko
-Alessio Mognato
+* Luca Loddo
+* Matteo Kolyszko
+* Alessio Mognato
