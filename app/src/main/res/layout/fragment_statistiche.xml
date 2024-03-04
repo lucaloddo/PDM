@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="48dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/Titolo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:text="@string/le_tue_misurazioni"
+                android:textAppearance="?attr/textAppearanceHeadline6"
+                android:textColor="@color/blue_500" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/card"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                app:cardElevation="0dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:strokeColor="@color/blue_500"
+                app:strokeWidth="1dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/linearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toTopOf="@+id/textView3"
+                    app:layout_constraintTop_toTopOf="@+id/textView3">
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/bmi"
+                        android:textAppearance="?attr/textAppearanceHeadline6"
+                        android:textColor="@color/blue_500"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                    <TextView
+                        android:id="@+id/Descrizione"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/descrizione"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="@color/blue_500"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+                    <TextView
+                        android:id="@+id/bmiDescrizione"
+                        android:layout_width="290dp"
+                        android:layout_height="0dp"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/descrizioneTesto"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="@color/blue_500"
+                        app:layout_constraintStart_toEndOf="@+id/Descrizione"
+                        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+                    <TextView
+                        android:id="@+id/Indice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/la_tua_misurazione"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="@color/blue_500"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/bmiDescrizione" />
+
+                    <TextView
+                        android:id="@+id/BMI"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textStyle="bold"
+                        android:textColor="@color/blue_500"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/Indice"
+                        app:layout_constraintTop_toBottomOf="@+id/bmiDescrizione" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/card1"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                app:cardElevation="0dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:strokeColor="@color/blue_500"
+                app:strokeWidth="1dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/linearLayout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toTopOf="@+id/textView3"
+                    app:layout_constraintTop_toTopOf="@+id/textView3">
+
+                    <TextView
+                        android:id="@+id/bfp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/bfp"
+                        android:textAppearance="?attr/textAppearanceHeadline6"
+                        android:textColor="@color/blue_500"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/Descrizione1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/descrizione"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="@color/blue_500"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/bfp" />
+
+                    <TextView
+                        android:id="@+id/bfpDescrizione"
+                        android:layout_width="290dp"
+                        android:layout_height="0dp"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/descrizioneMassaGrassa"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="@color/blue_500"
+                        app:layout_constraintStart_toEndOf="@+id/Descrizione1"
+                        app:layout_constraintTop_toBottomOf="@+id/bfp" />
+
+                    <TextView
+                        android:id="@+id/Indice1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/la_tua_misurazione"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="@color/blue_500"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/bfpDescrizione" />
+
+                    <TextView
+                        android:id="@+id/BFP"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textStyle="bold"
+                        android:textColor="@color/blue_500"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/Indice1"
+                        app:layout_constraintTop_toBottomOf="@+id/bfpDescrizione" />
+
+                    <TextView
+                        android:id="@+id/percentuale"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="2dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:text="@string/percento"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textStyle="bold"
+                        android:textColor="@color/blue_500"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/BFP"
+                        app:layout_constraintTop_toBottomOf="@+id/bfpDescrizione" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/card2"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                app:cardElevation="0dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:strokeColor="@color/blue_500"
+                app:strokeWidth="1dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/linearLayout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toTopOf="@+id/textView3"
+                    app:layout_constraintTop_toTopOf="@+id/textView3">
+
+                    <TextView
+                        android:id="@+id/lbm"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/lbm"
+                        android:textAppearance="?attr/textAppearanceHeadline6"
+                        android:textColor="@color/blue_500"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/Descrizione2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/descrizione"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="@color/blue_500"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/lbm" />
+
+                    <TextView
+                        android:id="@+id/lbmDescrizione"
+                        android:layout_width="290dp"
+                        android:layout_height="0dp"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/LBMDescrizione"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="@color/blue_500"
+                        app:layout_constraintStart_toEndOf="@+id/Descrizione2"
+                        app:layout_constraintTop_toBottomOf="@+id/lbm" />
+
+                    <TextView
+                        android:id="@+id/Indice2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/la_tua_misurazione"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="@color/blue_500"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/lbmDescrizione" />
+
+                    <TextView
+                        android:id="@+id/LBM"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="@color/blue_500"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/Indice2"
+                        app:layout_constraintTop_toBottomOf="@+id/lbmDescrizione" />
+
+                    <TextView
+                        android:id="@+id/kg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="2dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:text="@string/kg"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textStyle="bold"
+                        android:textColor="@color/blue_500"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/LBM"
+                        app:layout_constraintTop_toBottomOf="@+id/lbmDescrizione" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/card3"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                app:cardElevation="0dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:strokeColor="@color/blue_500"
+                app:strokeWidth="1dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/linearLayout3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toTopOf="@+id/textView3"
+                    app:layout_constraintTop_toTopOf="@+id/textView3">
+
+                    <TextView
+                        android:id="@+id/tdee"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/tdee"
+                        android:textAppearance="?attr/textAppearanceHeadline6"
+                        android:textColor="@color/blue_500"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/Descrizione3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/descrizione"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="@color/blue_500"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tdee" />
+
+                    <TextView
+                        android:id="@+id/tdeeDescrizione"
+                        android:layout_width="290dp"
+                        android:layout_height="0dp"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/tdeeDesc"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="@color/blue_500"
+                        app:layout_constraintStart_toEndOf="@+id/Descrizione3"
+                        app:layout_constraintTop_toBottomOf="@+id/tdee" />
+
+                    <TextView
+                        android:id="@+id/Indice3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/la_tua_misurazione"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="@color/blue_500"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tdeeDescrizione" />
+
+                    <TextView
+                        android:id="@+id/TDEE"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textStyle="bold"
+                        android:textColor="@color/blue_500"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/Indice3"
+                        app:layout_constraintTop_toBottomOf="@+id/tdeeDescrizione" />
+
+                    <TextView
+                        android:id="@+id/kcal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="2dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:text="@string/kcal"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textStyle="bold"
+                        android:textColor="@color/blue_500"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/TDEE"
+                        app:layout_constraintTop_toBottomOf="@+id/tdeeDescrizione" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

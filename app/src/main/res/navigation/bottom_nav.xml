@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_nav"
+    app:startDestination="@id/allenamentoFragment">
+
+    <fragment
+        android:id="@+id/allenamentoFragment"
+        android:name="com.example.athletify.ui.allenamento.AllenamentoFragment"
+        android:label="Allenamento"
+        tools:layout="@layout/fragment_allenamento" />
+
+    <fragment
+        android:id="@+id/eserciziFragment"
+        android:name="com.example.athletify.ui.esercizi.EserciziFragment"
+        android:label="Esercizi"
+        tools:layout="@layout/fragment_esercizi" />
+
+    <fragment
+        android:id="@+id/alimentazioneFragment"
+        android:name="com.example.athletify.ui.alimentazione.AlimentazioneFragment"
+        android:label="Alimentazione"
+        tools:layout="@layout/fragment_alimentazione" />
+
+    <fragment
+        android:id="@+id/statisticheFragment"
+        android:name="com.example.athletify.ui.statistiche.StatisticheFragment"
+        android:label="Statistiche"
+        tools:layout="@layout/fragment_statistiche" />
+
+</navigation>

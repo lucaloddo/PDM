@@ -1,0 +1,830 @@
+{
+  "workouts":[
+    {
+      "name":"Upper-Lower-Workout",
+      "level":"intermedio",
+      "freq":"6",
+      "days":[
+        {
+          "dayName":"day1",
+          "exerciseList":[
+            {
+              "exerciseName":"BACK SQUAT",
+              "set":"3",
+              "reps":"4",
+              "weight":"75%"
+            },
+            {
+              "exerciseName":"ECCENTRIC-ACCENTUATED STIFF LEG DEADLIFT",
+              "set":"3",
+              "reps":"10",
+              "weight":"RPE7"
+            },
+            {
+              "exerciseName":"CONSTANT-TENSION LEG PRESS",
+              "set":"2",
+              "reps":"20",
+              "weight":"RPE8"
+            },
+            {
+              "exerciseName":"GOOD MORNING",
+              "set":"3",
+              "reps":"8",
+              "weight":"RPE7"
+            },
+            {
+              "exerciseName":"ECCENTRIC-ACCENTUATED STANDING CALF RAISE",
+              "set":"4",
+              "reps":"6/6",
+              "weight":"RPE8"
+            },
+            {
+              "exerciseName":"CABLE CRUNCH",
+              "set":"3",
+              "reps":"30",
+              "weight":"RPE8"
+            }
+          ]
+        },
+        {
+          "dayName":"day2",
+          "exerciseList":[
+            {
+              "exerciseName":"BARBELL BENCH PRESS",
+              "set":"3",
+              "reps":"6",
+              "weight":"70%"
+            },
+            {
+              "exerciseName":"LAT PULLDOWN",
+              "set":"3",
+              "reps":"10",
+              "weight":"RPE8"
+            },
+            {
+              "exerciseName":"PAUSE DUMBBELL INCLINE",
+              "set":"3",
+              "reps":"8",
+              "weight":"RPE7"
+            },
+            {
+              "exerciseName":"PRESS",
+              "set":"3",
+              "reps":"10",
+              "weight":"RPE8"
+            },
+            {
+              "exerciseName":"PENDLAY ROW/BARBELL BENTOVER ROW",
+              "set":"3",
+              "reps":"10/10",
+              "weight":"RPE8"
+            },
+            {
+              "exerciseName":"CONSTANT-TENSION MACHINE SHOULDER PRESS",
+              "set":"2",
+              "reps":"12",
+              "weight":"RPE9"
+            },
+            {
+              "exerciseName":"MACHINE LATERAL RAISE",
+              "set":"3",
+              "reps":"12/12",
+              "weight":"RPE9"
+            }
+          ]
+        },
+        {
+          "dayName":"day3",
+          "exerciseList":[
+            {
+              "exerciseName":"DEADLIFT",
+              "set":"2",
+              "reps":"6",
+              "weight":"80%"
+            },
+            {
+              "exerciseName":"FRONT SQUAT",
+              "set":"3",
+              "reps":"8",
+              "weight":"65%"
+            },
+            {
+              "exerciseName":"BARBELL HIP THRUST",
+              "set":"3",
+              "reps":"12",
+              "weight":"RPE8"
+            },
+            {
+              "exerciseName":"CONSTANT-TENSION LYING LEG CURL",
+              "set":"3",
+              "reps":"20",
+              "weight":"RPE8"
+            },
+            {
+              "exerciseName":"UNILATERAL ECCENTRIC OVERLOADED LEG EXTENSION",
+              "set":"3",
+              "reps":"12",
+              "weight":"RPE8"
+            },
+            {
+              "exerciseName":"LOWER BODY WEAK POINT 1",
+              "set":"2 or 3",
+              "reps":"15/20",
+              "weight":"RPE9"
+            }
+          ]
+        },
+        {
+          "dayName":"day4",
+          "exerciseList":[
+            {
+              "exerciseName":"BARBELL OVERHEAD PRESS",
+              "set":"2",
+              "reps":"4",
+              "weight":"75%"
+            },
+            {
+              "exerciseName":"WIDE-GRIP PULL-UP",
+              "set":"3",
+              "reps":"6",
+              "weight":"RPE7"
+            },
+            {
+              "exerciseName":"BARBELL CLOSE GRIP BENCHPRESS",
+              "set":"3",
+              "reps":"10",
+              "weight":"60%"
+            },
+            {
+              "exerciseName":"CABLE CLOSE-GRIP ROW",
+              "set":"3",
+              "reps":"15",
+              "weight":"RPE8"
+            },
+            {
+              "exerciseName":"CABLE FLY",
+              "set":"3",
+              "reps":"7/7/7",
+              "weight":"RPE8"
+            },
+            {
+              "exerciseName":"MACHINE CHEST-SUPPORTED ROW W/BAND",
+              "set":"2",
+              "reps":"20",
+              "weight":"RPE8"
+            },
+            {
+              "exerciseName":"SUPINATED DUMBBELL CURL",
+              "set":"3",
+              "reps":"15",
+              "weight":"RPE8"
+            },
+            {
+              "exerciseName":"LOWER BODY WEAK POINT 1",
+              "set":"2 or 3",
+              "reps":"15/20",
+              "weight":"RPE9"
+            }
+          ]
+        },
+        {
+          "dayName":"day5",
+          "exerciseList":[
+            {
+              "exerciseName":"BACK SQUAT",
+              "set":"3",
+              "reps":"8",
+              "weight":"70%"
+            },
+            {
+              "exerciseName":"DUMBBELL WALKING LUNGE",
+              "set":"3",
+              "reps":"15",
+              "weight":"RPE8"
+            },
+            {
+              "exerciseName":"A1: SEATED LEG CURL",
+              "set":"3",
+              "reps":"15",
+              "weight":"RPE9"
+            },
+            {
+              "exerciseName":"A2: CABLE PULL-THROUGH",
+              "set":"3",
+              "reps":"15",
+              "weight":"RPE9"
+            },
+            {
+              "exerciseName":"MACHINE HIP ABDUCTION",
+              "set":"3",
+              "reps":"7/7/7",
+              "weight":"RPE8"
+            },
+            {
+              "exerciseName":"WEIGHTED CRUNCH",
+              "set":"2",
+              "reps":"20",
+              "weight":"RPE7"
+            }
+          ]
+        },
+        {
+          "dayName":"day6",
+          "exerciseList":[
+            {
+              "exerciseName":"BARBELL INCLINE PRESS",
+              "set":"3",
+              "reps":"8",
+              "weight":"65%"
+            },
+            {
+              "exerciseName":"NEUTRAL-GRIP PULL-UP/NEGATIVE NEUTRAL-GRIP PULL-UP",
+              "set":"3",
+              "reps":"10",
+              "weight":"RPE8"
+            },
+            {
+              "exerciseName":"DIP",
+              "set":"3",
+              "reps":"10",
+              "weight":"RPE8"
+            },
+            {
+              "exerciseName":"SEATED T-BAR ROW",
+              "set":"3",
+              "reps":"12",
+              "weight":"RPE8"
+            },
+            {
+              "exerciseName":"BARBELL OVERHEAD PRESS",
+              "set":"3",
+              "reps":"12",
+              "weight":"RPE8"
+            },
+            {
+              "exerciseName":"MYO REPS FLOOR SKULLCRUSHER",
+              "set":"3",
+              "reps":"10",
+              "weight":"RPE9"
+            },
+            {
+              "exerciseName":"WEIGHTED CRUNCH",
+              "set":"2 or 3",
+              "reps":"15-20",
+              "weight":"RPE9"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name":"Push-Pull-Legs-Workout",
+      "level":"intermedio",
+      "freq":"6",
+      "days":[
+        {
+          "dayName":"day1",
+          "exerciseList":[
+            {
+              "exerciseName":"BACK SQUAT",
+              "set":"4",
+              "reps":"5",
+              "weight":"75%"
+            },
+            {
+              "exerciseName":"DEADLIFT",
+              "set":"2",
+              "reps":"8",
+              "weight":"65%"
+            },
+            {
+              "exerciseName":"BARBELL HIP THRUST",
+              "set":"3",
+              "reps":"10-12",
+              "weight":"RPE8"
+            },
+            {
+              "exerciseName":"DUMBBELL WALKING LUNGE",
+              "set":"2",
+              "reps":"20 each leg",
+              "weight":"RPE9"
+            },
+            {
+              "exerciseName":"A1: LEG EXTENSION",
+              "set":"3",
+              "reps":"15",
+              "weight":"RPE9"
+            },
+            {
+              "exerciseName":"A2: SEATED LEG CURL",
+              "set":"3",
+              "reps":"15",
+              "weight":"RPE9"
+            },
+            {
+              "exerciseName":"CABLE CRUNCH",
+              "set":"3",
+              "reps":"10",
+              "weight":"RPE7"
+            }
+          ]
+        },
+        {
+          "dayName":"day2",
+          "exerciseList":[
+            {
+              "exerciseName":"BARBELL BENCH PRESS",
+              "set":"3",
+              "reps":"4",
+              "weight":"80%"
+            },
+            {
+              "exerciseName":"DUMBBELL SEATED SHOULDER PRESS",
+              "set":"3",
+              "reps":"8",
+              "weight":"RPE8"
+            },
+            {
+              "exerciseName":"WEIGHTED DIP",
+              "set":"3",
+              "reps":"6-10",
+              "weight":"RPE7"
+            },
+            {
+              "exerciseName":"LOW-TO-HIGH CABLE FLY",
+              "set":"3",
+              "reps":"12-15",
+              "weight":"RPE9"
+            },
+            {
+              "exerciseName":"DUMBBELL ISOLATERAL SKULL CRUSHER",
+              "set":"3",
+              "reps":"12",
+              "weight":"RPE9"
+            },
+            {
+              "exerciseName":"DUMBBELL LATERAL RAISE",
+              "set":"3",
+              "reps":"15",
+              "weight":"RPE8"
+            },
+            {
+              "exerciseName":"AB WHEEL ROLLOUT",
+              "set":"3",
+              "reps":"6",
+              "weight":"RPE8"
+            }
+          ]
+        },
+        {
+          "dayName":"day3",
+          "exerciseList":[
+            {
+              "exerciseName":"1 ARM LAT PULL-IN",
+              "set":"2",
+              "reps":"15-20",
+              "weight":"RPE5"
+            },
+            {
+              "exerciseName":"PULL-UP",
+              "set":"4",
+              "reps":"6-8",
+              "weight":"RPE8"
+            },
+            {
+              "exerciseName":"PENDLAY ROW",
+              "set":"3",
+              "reps":"8-10",
+              "weight":"RPE8"
+            },
+            {
+              "exerciseName":"MACHINE HIGH ROW",
+              "set":"3",
+              "reps":"10-12",
+              "weight":"RPE9"
+            },
+            {
+              "exerciseName":"SEATED FACE PULL",
+              "set":"3",
+              "reps":"20",
+              "weight":"RPE9"
+            },
+            {
+              "exerciseName":"A1: REVERSE GRIP EZ BAR CURL",
+              "set":"3",
+              "reps":"20",
+              "weight":"RPE10"
+            },
+            {
+              "exerciseName":"A2: SUPINATED EZ BAR CURL",
+              "set":"3",
+              "reps":"15",
+              "weight":"RPE10"
+            },
+            {
+              "exerciseName":"DUMBBELL PREACHER CUR",
+              "set":"3",
+              "reps":"12",
+              "weight":"RPE8"
+            }
+          ]
+        },
+        {
+          "dayName":"day4",
+          "exerciseList":[
+            {
+              "exerciseName":"DEADLIFT",
+              "set":"4",
+              "reps":"4",
+              "weight":"77.50%"
+            },
+            {
+              "exerciseName":"FRONT SQUAT",
+              "set":"3",
+              "reps":"6-8",
+              "weight":"60%"
+            },
+            {
+              "exerciseName":"CABLE PULL THROUGH",
+              "set":"3",
+              "reps":"20",
+              "weight":"RPE9"
+            },
+            {
+              "exerciseName":"SINGLE-LEG LEG PRESS",
+              "set":"3",
+              "reps":"10-12",
+              "weight":"RPE8"
+            },
+            {
+              "exerciseName":"SINGLE-LEG LEG EXTENSION",
+              "set":"3",
+              "reps":"15",
+              "weight":"RPE8"
+            },
+            {
+              "exerciseName":"SWISS BALL SINGLE-LEG LEG CURL",
+              "set":"3",
+              "reps":"12",
+              "weight":"RPE8"
+            },
+            {
+              "exerciseName":"STANDING CALF RAISE",
+              "set":"3",
+              "reps":"12",
+              "weight":"RPE8"
+            },
+            {
+              "exerciseName":"LOWER BODY WEAK POINT 1",
+              "set":"2 or 3",
+              "reps":"15/20",
+              "weight":"RPE9"
+            }
+          ]
+        },
+        {
+          "dayName":"day5",
+          "exerciseList":[
+            {
+              "exerciseName":"CLOSE-GRIP BENCH PRESS",
+              "set":"3",
+              "reps":"6",
+              "weight":"72.50%"
+            },
+            {
+              "exerciseName":"MILITARY PRESS",
+              "set":"3",
+              "reps":"5",
+              "weight":"80%"
+            },
+            {
+              "exerciseName":"DUMBBELL INCLINE PRESS",
+              "set":"3",
+              "reps":"10-12",
+              "weight":"RPE8"
+            },
+            {
+              "exerciseName":"PEC DECK",
+              "set":"3",
+              "reps":"15",
+              "weight":"RPE8"
+            },
+            {
+              "exerciseName":"CABLE LATERAL RAISE",
+              "set":"3",
+              "reps":"8",
+              "weight":"RPE9"
+            },
+            {
+              "exerciseName":"CABLE TRICEPS KICKBACK",
+              "set":"3",
+              "reps":"20",
+              "weight":"RPE9"
+            },
+            {
+              "exerciseName":"BICYCLE CRUNCH",
+              "set":"3",
+              "reps":"12",
+              "weight":"RPE8"
+            }
+          ]
+        },
+        {
+          "dayName":"day6",
+          "exerciseList":[
+            {
+              "exerciseName":"NEUTRAL-GRIP PULLDOWN",
+              "set":"3",
+              "reps":"10-12",
+              "weight":"RPE8"
+            },
+            {
+              "exerciseName":"A1: CABLE SEATED ELBOWS OUT ROW",
+              "set":"3",
+              "reps":"10",
+              "weight":"RPE8"
+            },
+            {
+              "exerciseName":"A2: CABLE SEATED ROW",
+              "set":"3",
+              "reps":"10",
+              "weight":"RPE8"
+            },
+            {
+              "exerciseName":"KNEELING STRAIGHT-ARM CABLE PULL-OVER",
+              "set":"3",
+              "reps":"15",
+              "weight":"RPE7"
+            },
+            {
+              "exerciseName":"SNATCH GRIP BARBELL SHRUG",
+              "set":"3",
+              "reps":"15",
+              "weight":"RPE8"
+            },
+            {
+              "exerciseName":"CABLE REVERSE FLY",
+              "set":"3",
+              "reps":"20",
+              "weight":"RPE8"
+            },
+            {
+              "exerciseName":"SINGLE-ARM CABLE CURL",
+              "set":"3",
+              "reps":"12",
+              "weight":"RPE9"
+            },
+            {
+              "exerciseName":"HAMMER CURL",
+              "set":"3",
+              "reps":"8",
+              "weight":"RPE9"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name":"Full-Body-Workout",
+      "level":"avanzato",
+      "freq":"5",
+      "days":[
+        {
+          "dayName":"day1",
+          "exerciseList":[
+            {
+              "exerciseName":"BACK SQUAT",
+              "set":"4",
+              "reps":"4",
+              "weight":"82.50%"
+            },
+            {
+              "exerciseName":"DUMBBELL INCLINE PRESS",
+              "set":"3",
+              "reps":"8",
+              "weight":"RPE8"
+            },
+            {
+              "exerciseName":"LYING LEG CURL",
+              "set":"3",
+              "reps":"10",
+              "weight":"RPE6"
+            },
+            {
+              "exerciseName":"PRONATED PULLDOWN",
+              "set":"3",
+              "reps":"10",
+              "weight":"RPE7"
+            },
+            {
+              "exerciseName":"SUPINATED EZ BAR CURL",
+              "set":"3",
+              "reps":"15/15",
+              "weight":"RPE9"
+            },
+            {
+              "exerciseName":"HANGING LEG RAISE",
+              "set":"3",
+              "reps":"12",
+              "weight":"RPE7"
+            }
+          ]
+        },
+        {
+          "dayName":"day2",
+          "exerciseList":[
+            {
+              "exerciseName":"BARBELL BENCH PRESS",
+              "set":"3",
+              "reps":"3",
+              "weight":"85%"
+            },
+            {
+              "exerciseName":"LOW TO HIGH CABLE FLY",
+              "set":"3",
+              "reps":"15",
+              "weight":"RPE8"
+            },
+            {
+              "exerciseName":"BARBELL HIP THRUST OR ROMANIAN DEADLIFT",
+              "set":"3",
+              "reps":"12",
+              "weight":"RPE8"
+            },
+            {
+              "exerciseName":"CHEST-SUPPORTED T-BAR ROW",
+              "set":"3",
+              "reps":"15",
+              "weight":"RPE8"
+            },
+            {
+              "exerciseName":"ARNOLD PRESS",
+              "set":"3",
+              "reps":"10",
+              "weight":"RPE7"
+            },
+            {
+              "exerciseName":"TRICEP PRESSDOWN",
+              "set":"3",
+              "reps":"15",
+              "weight":"RPE7"
+            },
+            {
+              "exerciseName":"HEX BAR OR SMITH MACHINE SHRUG",
+              "set":"3",
+              "reps":"12",
+              "weight":"RPE6"
+            }
+          ]
+        },
+        {
+          "dayName":"day3",
+          "exerciseList":[
+            {
+              "exerciseName":"WEIGHTED PULL-UP",
+              "set":"3",
+              "reps":"6",
+              "weight":"RPE8"
+            },
+            {
+              "exerciseName":"HUMBLE ROW",
+              "set":"3",
+              "reps":"10",
+              "weight":"RPE8"
+            },
+            {
+              "exerciseName":"LEG PRESS",
+              "set":"3",
+              "reps":"16",
+              "weight":"RPE6"
+            },
+            {
+              "exerciseName":"STANDING CALF RAISE",
+              "set":"4",
+              "reps":"8",
+              "weight":"RPE7"
+            },
+            {
+              "exerciseName":"CABLE ROPE UPRIGHT ROW",
+              "set":"3",
+              "reps":"10",
+              "weight":"RPE7"
+            },
+            {
+              "exerciseName":"HAMMER CURL",
+              "set":"3",
+              "reps":"8",
+              "weight":"RPE9"
+            }
+          ]
+        },
+        {
+          "dayName":"day4",
+          "exerciseList":[
+            {
+              "exerciseName":"DEADLIFT",
+              "set":"4",
+              "reps":"2",
+              "weight":"85%"
+            },
+            {
+              "exerciseName":"DIP",
+              "set":"3",
+              "reps":"10",
+              "weight":"RPE8"
+            },
+            {
+              "exerciseName":"GLUTE HAM RAISE",
+              "set":"3",
+              "reps":"10",
+              "weight":"RPE6"
+            },
+            {
+              "exerciseName":"LEG EXTENSION",
+              "set":"3",
+              "reps":"15",
+              "weight":"RPE7"
+            },
+            {
+              "exerciseName":"CABLE PULL-OVER",
+              "set":"3",
+              "reps":"15",
+              "weight":"RPE7"
+            },
+            {
+              "exerciseName":"DUMBBELL LATERAL RAISE",
+              "set":"3",
+              "reps":"20",
+              "weight":"RPE7"
+            },
+            {
+              "exerciseName":"ROPE FACE PULL",
+              "set":"3",
+              "reps":"20",
+              "weight":"RPE7"
+            },
+            {
+              "exerciseName":"EZ BAR SKULL CRUSHER",
+              "set":"3",
+              "reps":"15",
+              "weight":"RPE7"
+            }
+          ]
+        },
+        {
+          "dayName":"day5",
+          "exerciseList":[
+            {
+              "exerciseName":"OVERHEAD PRESS",
+              "set":"4",
+              "reps":"6",
+              "weight":"65%"
+            },
+            {
+              "exerciseName":"EGYPTIAN LATERAL RAISE",
+              "set":"3",
+              "reps":"8",
+              "weight":"RPE8"
+            },
+            {
+              "exerciseName":"CABLE SEATED ROW",
+              "set":"3",
+              "reps":"12",
+              "weight":"RPE7"
+            },
+            {
+              "exerciseName":"SEATED HIP ABDUCTION",
+              "set":"3",
+              "reps":"20",
+              "weight":"RPE7"
+            },
+            {
+              "exerciseName":"INCLINE DUMBBELL CURL",
+              "set":"2",
+              "reps":"10",
+              "weight":"RPE8"
+            },
+            {
+              "exerciseName":"BICYCLE CRUNCH",
+              "set":"3",
+              "reps":"15",
+              "weight":"RPE7"
+            },
+            {
+              "exerciseName":"STANDING CALF RAISE",
+              "set":"4",
+              "reps":"12",
+              "weight":"RPE7"
+            },
+            {
+              "exerciseName":"PUSH UP",
+              "set":"2",
+              "reps":"RPE ONLY",
+              "weight":"RPE6"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

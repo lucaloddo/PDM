@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="275dp"
+            android:background="@drawable/frag_bg">
+
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="55dp"
+            android:text="@string/registrazione"
+            android:textColor="@color/blue_500"
+            android:textSize="25sp"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="60dp"
+            android:background="@drawable/border_bg">
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/mail_icon"
+                android:background="@android:color/transparent"
+                android:hint="@string/prompt_email"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:paddingStart="15dp"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:textSize="15sp"
+                android:importantForAutofill="no"
+                tools:ignore="RtlSymmetry" />
+
+            <ImageView
+                android:id="@+id/mail_icon"
+                android:layout_width="25dp"
+                android:layout_height="24dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="20dp"
+                android:src="@drawable/ic_icons8_mail"
+                android:contentDescription="@string/iconaemail" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginRight="60dp"
+            android:background="@drawable/border_bg">
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/icon"
+                android:background="@android:color/transparent"
+                android:hint="@string/prompt_password"
+                android:inputType="textPassword"
+                android:maxLength="10"
+                android:maxLines="1"
+                android:paddingStart="15dp"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:textSize="15sp"
+                android:importantForAutofill="no"
+                tools:ignore="RtlSymmetry" />
+
+            <ImageView
+                android:id="@+id/icon"
+                android:layout_width="25dp"
+                android:layout_height="24dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="20dp"
+                android:src="@drawable/ic_icons8_chiave"
+                android:contentDescription="@string/iconapassword" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/registration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="60dp"
+            android:background="@drawable/primary_bg_fill"
+            android:gravity="center"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:text="@string/register"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="15sp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

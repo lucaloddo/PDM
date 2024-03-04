@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/allenamentoFragment"
+        android:icon="@drawable/manubrio"
+        android:title="@string/allenamento" />
+    <item
+        android:id="@+id/eserciziFragment"
+        android:icon="@drawable/cerca_in_lista"
+        android:title="@string/esercizi" />
+    <item
+        android:id="@+id/alimentazioneFragment"
+        android:icon="@drawable/ciotola_di_riso"
+        android:title="@string/alimentazione" />
+    <item
+        android:id="@+id/statisticheFragment"
+        android:icon="@drawable/istogramma"
+        android:title="@string/statistiche" />
+
+</menu>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "68455036618",
+    "firebase_url": "https://athletify-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "athletify",
+    "storage_bucket": "athletify.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:68455036618:android:f3a0ee63f3393bc0a72633",
+        "android_client_info": {
+          "package_name": "com.example.athletify"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "68455036618-kkjkh1921qfgguah45a37bqfpn6dl99p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCf8DEmb1kJWhw2iiDFjyVD1Yg0d3jNook"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "68455036618-kkjkh1921qfgguah45a37bqfpn6dl99p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

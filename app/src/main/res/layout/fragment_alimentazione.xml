@@ -1,0 +1,789 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="48dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/Titolo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:text="@string/i_tuoi_piani_alimentari"
+                android:textAppearance="?attr/textAppearanceHeadline6"
+                android:textColor="@color/blue_500" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/card"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                app:cardElevation="0dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:strokeColor="@color/blue_500"
+                app:strokeWidth="1dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/linearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/mantenimento"
+                        android:textAppearance="?attr/textAppearanceHeadline6"
+                        android:textColor="@color/blue_500"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/descrizioneMant"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/descrizione"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="@color/blue_500"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+                    <TextView
+                        android:id="@+id/MantDes"
+                        android:layout_width="290dp"
+                        android:layout_height="0dp"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/defMant"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="@color/blue_500"
+                        app:layout_constraintStart_toEndOf="@+id/descrizioneMant"
+                        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+                    <TextView
+                        android:id="@+id/calorieMantenimento"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="2dp"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="@color/blue_500"
+                        app:layout_constraintEnd_toStartOf="@+id/kcal"
+                        app:layout_constraintTop_toBottomOf="@+id/MantDes" />
+
+                    <TextView
+                        android:id="@+id/kcal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:text="@string/kcal"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="@color/blue_500"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/MantDes" />
+
+                    <ImageView
+                        android:id="@+id/calorieImm"
+                        android:layout_width="19dp"
+                        android:layout_height="19dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginBottom="8dp"
+                        app:layout_constraintBottom_toTopOf="@+id/proteineImm"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:srcCompat="@drawable/ic_icons8_calories"
+                        android:contentDescription="@string/iconacalorie" />
+
+                    <ImageView
+                        android:id="@+id/proteineImm"
+                        android:layout_width="19dp"
+                        android:layout_height="19dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/calorieTitolo"
+                        app:srcCompat="@drawable/prote"
+                        android:contentDescription="@string/iconaproteine" />
+
+                    <ImageView
+                        android:id="@+id/carboImm"
+                        android:layout_width="19dp"
+                        android:layout_height="19dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/proteineImm"
+                        app:srcCompat="@drawable/carbo"
+                        android:contentDescription="@string/iconacarboidrati" />
+
+                    <ImageView
+                        android:id="@+id/grassiImm"
+                        android:layout_width="19dp"
+                        android:layout_height="19dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/carboImm"
+                        app:srcCompat="@drawable/grassi1"
+                        android:contentDescription="@string/iconagrassi" />
+
+                    <TextView
+                        android:id="@+id/calorieTitolo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/calorie"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="@color/blue_500"
+                        app:layout_constraintStart_toEndOf="@+id/calorieImm"
+                        app:layout_constraintTop_toBottomOf="@+id/MantDes" />
+
+                    <TextView
+                        android:id="@+id/proteineTitolo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/proteine"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="@color/blue_500"
+                        app:layout_constraintStart_toEndOf="@+id/proteineImm"
+                        app:layout_constraintTop_toBottomOf="@+id/calorieTitolo" />
+
+                    <TextView
+                        android:id="@+id/carboTitolo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/carboidrati"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="@color/blue_500"
+                        app:layout_constraintStart_toEndOf="@+id/carboImm"
+                        app:layout_constraintTop_toBottomOf="@+id/proteineTitolo" />
+
+                    <TextView
+                        android:id="@+id/grassiTitolo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:text="@string/grassi"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="@color/blue_500"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/grassiImm"
+                        app:layout_constraintTop_toBottomOf="@+id/carboTitolo" />
+
+                    <TextView
+                        android:id="@+id/proteineMantenimento"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="2dp"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="@color/blue_500"
+                        app:layout_constraintEnd_toStartOf="@+id/gProteine"
+                        app:layout_constraintTop_toBottomOf="@+id/calorieMantenimento" />
+
+                    <TextView
+                        android:id="@+id/gProteine"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:text="@string/grammi"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="@color/blue_500"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/kcal" />
+
+                    <TextView
+                        android:id="@+id/carboidratiMantenimento"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="2dp"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="@color/blue_500"
+                        app:layout_constraintEnd_toStartOf="@+id/gCarbo"
+                        app:layout_constraintTop_toBottomOf="@+id/proteineMantenimento" />
+
+                    <TextView
+                        android:id="@+id/gCarbo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:text="@string/grammi"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="@color/blue_500"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/gProteine" />
+
+                    <TextView
+                        android:id="@+id/grassiMantenimento"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="2dp"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="@color/blue_500"
+                        app:layout_constraintEnd_toStartOf="@+id/gGrassi"
+                        app:layout_constraintTop_toBottomOf="@+id/carboidratiMantenimento" />
+
+                    <TextView
+                        android:id="@+id/gGrassi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:text="@string/grammi"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="@color/blue_500"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/gCarbo" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardDef"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                app:cardElevation="0dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:strokeColor="@color/blue_500"
+                app:strokeWidth="1dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/linearLayout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toTopOf="@+id/textView3"
+                    app:layout_constraintTop_toTopOf="@+id/textView3">
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/definizione"
+                        android:textAppearance="?attr/textAppearanceHeadline6"
+                        android:textColor="@color/blue_500"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/descrizioneDef"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/descrizione"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="@color/blue_500"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+                    <TextView
+                        android:id="@+id/DefDes"
+                        android:layout_width="290dp"
+                        android:layout_height="0dp"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/definiDef"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="@color/blue_500"
+                        app:layout_constraintStart_toEndOf="@+id/descrizioneDef"
+                        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+
+                    <TextView
+                        android:id="@+id/calorieDefinizione"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="2dp"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="@color/blue_500"
+                        app:layout_constraintEnd_toStartOf="@+id/kcalDef"
+                        app:layout_constraintTop_toBottomOf="@+id/DefDes" />
+
+                    <TextView
+                        android:id="@+id/kcalDef"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:text="@string/kcal"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="@color/blue_500"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/DefDes" />
+
+                    <ImageView
+                        android:id="@+id/calorieImmDef"
+                        android:layout_width="19dp"
+                        android:layout_height="19dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginBottom="8dp"
+                        app:layout_constraintBottom_toTopOf="@+id/proteineImmDef"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:srcCompat="@drawable/ic_icons8_calories"
+                        android:contentDescription="@string/iconacalorie" />
+
+                    <ImageView
+                        android:id="@+id/proteineImmDef"
+                        android:layout_width="19dp"
+                        android:layout_height="19dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/calorieImmDef"
+                        app:srcCompat="@drawable/prote"
+                        android:contentDescription="@string/iconaproteine" />
+
+                    <ImageView
+                        android:id="@+id/carboImmDef"
+                        android:layout_width="19dp"
+                        android:layout_height="19dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/proteineImmDef"
+                        app:srcCompat="@drawable/carbo"
+                        android:contentDescription="@string/iconacarboidrati" />
+
+                    <ImageView
+                        android:id="@+id/grassiImmDef"
+                        android:layout_width="19dp"
+                        android:layout_height="19dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/carboImmDef"
+                        app:srcCompat="@drawable/grassi1"
+                        android:contentDescription="@string/iconagrassi" />
+
+                    <TextView
+                        android:id="@+id/calorieTitoloDef"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/calorie"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="@color/blue_500"
+                        app:layout_constraintStart_toEndOf="@+id/calorieImmDef"
+                        app:layout_constraintTop_toBottomOf="@+id/DefDes" />
+
+                    <TextView
+                        android:id="@+id/proteineTitoloDef"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/proteine"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="@color/blue_500"
+                        app:layout_constraintStart_toEndOf="@+id/proteineImmDef"
+                        app:layout_constraintTop_toBottomOf="@+id/calorieTitoloDef" />
+
+                    <TextView
+                        android:id="@+id/carboTitoloDef"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/carboidrati"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="@color/blue_500"
+                        app:layout_constraintStart_toEndOf="@+id/carboImmDef"
+                        app:layout_constraintTop_toBottomOf="@+id/proteineTitoloDef" />
+
+                    <TextView
+                        android:id="@+id/grassiTitoloDeF"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:text="@string/grassi"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="@color/blue_500"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/grassiImmDef"
+                        app:layout_constraintTop_toBottomOf="@+id/carboTitoloDef" />
+
+                    <TextView
+                        android:id="@+id/proteineDefinizione"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="2dp"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="@color/blue_500"
+                        app:layout_constraintEnd_toStartOf="@+id/gProteine1"
+                        app:layout_constraintTop_toBottomOf="@+id/calorieDefinizione" />
+
+                    <TextView
+                        android:id="@+id/gProteine1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:text="@string/grammi"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="@color/blue_500"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/calorieDefinizione" />
+
+                    <TextView
+                        android:id="@+id/carboidratiDefinizione"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="2dp"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="@color/blue_500"
+                        app:layout_constraintEnd_toStartOf="@+id/gCarbo1"
+                        app:layout_constraintTop_toBottomOf="@+id/proteineDefinizione" />
+
+                    <TextView
+                        android:id="@+id/gCarbo1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:text="@string/grammi"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="@color/blue_500"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/gProteine1" />
+
+                    <TextView
+                        android:id="@+id/grassiDefinizione"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="2dp"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="@color/blue_500"
+                        app:layout_constraintEnd_toStartOf="@+id/gGrassi1"
+                        app:layout_constraintTop_toBottomOf="@+id/carboidratiDefinizione" />
+
+                    <TextView
+                        android:id="@+id/gGrassi1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:text="@string/grammi"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="@color/blue_500"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/gCarbo1" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardMass"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                app:cardElevation="0dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:strokeColor="@color/blue_500"
+                app:strokeWidth="1dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/linearLayout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toTopOf="@+id/textView3"
+                    app:layout_constraintTop_toTopOf="@+id/textView3">
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/massa"
+                        android:textAppearance="?attr/textAppearanceHeadline6"
+                        android:textColor="@color/blue_500"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/descrizioneMass"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/descrizione"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="@color/blue_500"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+                    <TextView
+                        android:id="@+id/MassDes"
+                        android:layout_width="290dp"
+                        android:layout_height="0dp"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/defMassa"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="@color/blue_500"
+                        app:layout_constraintStart_toEndOf="@+id/descrizioneMass"
+                        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+                    <TextView
+                        android:id="@+id/calorieMassa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="2dp"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="@color/blue_500"
+                        app:layout_constraintEnd_toStartOf="@+id/kcalMass"
+                        app:layout_constraintTop_toBottomOf="@+id/MassDes" />
+
+                    <TextView
+                        android:id="@+id/kcalMass"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:text="@string/kcal"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="@color/blue_500"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/MassDes" />
+
+                    <ImageView
+                        android:id="@+id/calorieImmMass"
+                        android:layout_width="19dp"
+                        android:layout_height="19dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginBottom="8dp"
+                        app:layout_constraintBottom_toTopOf="@+id/proteineImmMass"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:srcCompat="@drawable/ic_icons8_calories"
+                        android:contentDescription="@string/iconacalorie" />
+
+                    <ImageView
+                        android:id="@+id/proteineImmMass"
+                        android:layout_width="19dp"
+                        android:layout_height="19dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/calorieTitoloMass"
+                        app:srcCompat="@drawable/prote"
+                        android:contentDescription="@string/iconaproteine" />
+
+                    <ImageView
+                        android:id="@+id/carboImmMass"
+                        android:layout_width="19dp"
+                        android:layout_height="19dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/proteineImmMass"
+                        app:srcCompat="@drawable/carbo"
+                        android:contentDescription="@string/iconacarboidrati" />
+
+                    <ImageView
+                        android:id="@+id/grassiImmMass"
+                        android:layout_width="19dp"
+                        android:layout_height="19dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/carboImmMass"
+                        app:srcCompat="@drawable/grassi1"
+                        android:contentDescription="@string/iconagrassi" />
+
+                    <TextView
+                        android:id="@+id/calorieTitoloMass"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/calorie"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="@color/blue_500"
+                        app:layout_constraintStart_toEndOf="@+id/calorieImmMass"
+                        app:layout_constraintTop_toBottomOf="@+id/MassDes" />
+
+                    <TextView
+                        android:id="@+id/proteineTitoloMass"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/proteine"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="@color/blue_500"
+                        app:layout_constraintStart_toEndOf="@+id/proteineImmMass"
+                        app:layout_constraintTop_toBottomOf="@+id/calorieTitoloMass" />
+
+                    <TextView
+                        android:id="@+id/carboTitoloMass"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/carboidrati"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="@color/blue_500"
+                        app:layout_constraintStart_toEndOf="@+id/carboImmMass"
+                        app:layout_constraintTop_toBottomOf="@+id/proteineTitoloMass" />
+
+                    <TextView
+                        android:id="@+id/grassiTitoloMass"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:text="@string/grassi"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="@color/blue_500"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/grassiImmMass"
+                        app:layout_constraintTop_toBottomOf="@+id/carboTitoloMass" />
+
+                    <TextView
+                        android:id="@+id/proteineMassa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="2dp"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="@color/blue_500"
+                        app:layout_constraintEnd_toStartOf="@+id/gProteine2"
+                        app:layout_constraintTop_toBottomOf="@+id/calorieMassa" />
+
+                    <TextView
+                        android:id="@+id/gProteine2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:text="@string/grammi"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="@color/blue_500"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/calorieMassa" />
+
+                    <TextView
+                        android:id="@+id/carboidratiMassa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="2dp"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="@color/blue_500"
+                        app:layout_constraintEnd_toStartOf="@+id/gCarbo2"
+                        app:layout_constraintTop_toBottomOf="@+id/proteineMassa" />
+
+                    <TextView
+                        android:id="@+id/gCarbo2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:text="@string/grammi"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="@color/blue_500"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/gProteine2" />
+
+                    <TextView
+                        android:id="@+id/grassiMassa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="2dp"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="@color/blue_500"
+                        app:layout_constraintEnd_toStartOf="@+id/gGrassi2"
+                        app:layout_constraintTop_toBottomOf="@+id/carboidratiMassa" />
+
+                    <TextView
+                        android:id="@+id/gGrassi2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:text="@string/grammi"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="@color/blue_500"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/gCarbo2" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

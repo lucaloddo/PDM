@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="48dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/Titolo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:gravity="center"
+                            android:text="@string/le_tue_schede_di_allenamento"
+                            android:textAppearance="?attr/textAppearanceHeadline6"
+                            android:textColor="@color/blue_500" />
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:id="@+id/scheda_intermedio_entry"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginEnd="8dp"
+                            app:cardElevation="0dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:strokeColor="@color/blue_500"
+                            app:strokeWidth="1dp">
+
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:id="@+id/linearLayout1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                        <TextView
+                                            android:id="@+id/TitoloLivello"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="8dp"
+                                            android:text="@string/livello_principiante"
+                                            android:textAppearance="?attr/textAppearanceHeadline6"
+                                            android:textColor="@color/blue_500"
+                                            app:layout_constraintEnd_toEndOf="parent"
+                                            app:layout_constraintStart_toStartOf="parent"
+                                            app:layout_constraintTop_toTopOf="parent" />
+
+
+                                        <TextView
+                                            android:id="@+id/TipoAlle"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="8dp"
+                                            android:text="@string/push_pull_legs_workout"
+                                            android:textAppearance="?attr/textAppearanceBody2"
+                                            android:textColor="@color/blue_500"
+                                            app:layout_constraintEnd_toEndOf="parent"
+                                            app:layout_constraintStart_toStartOf="parent"
+                                            app:layout_constraintTop_toBottomOf="@+id/TitoloLivello" />
+
+                                        <ImageView
+                                            android:id="@+id/PancaImm"
+                                            android:layout_width="77dp"
+                                            android:layout_height="77dp"
+                                            android:layout_marginStart="8dp"
+                                            android:layout_marginTop="8dp"
+                                            android:layout_marginBottom="8dp"
+                                            app:layout_constraintBottom_toBottomOf="parent"
+                                            app:layout_constraintEnd_toEndOf="parent"
+                                            app:layout_constraintStart_toStartOf="parent"
+                                            app:layout_constraintTop_toBottomOf="@+id/TipoAlle"
+                                            app:srcCompat="@drawable/ic_icons8_bench_press"
+                                            android:contentDescription="@string/iconapanca" />
+
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        </com.google.android.material.card.MaterialCardView>
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:id="@+id/scheda_intermedio"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginEnd="8dp"
+                            app:cardElevation="0dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:strokeColor="@color/blue_500"
+                            app:strokeWidth="1dp">
+
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:id="@+id/linearLayout"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                        <TextView
+                                            android:id="@+id/AllenamentoTitolo"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="8dp"
+                                            android:text="@string/livello_intermedio"
+                                            android:textAppearance="?attr/textAppearanceHeadline6"
+                                            android:textColor="@color/blue_500"
+                                            app:layout_constraintEnd_toEndOf="parent"
+                                            app:layout_constraintStart_toStartOf="parent"
+                                            app:layout_constraintTop_toTopOf="parent" />
+
+
+                                        <TextView
+                                            android:id="@+id/tipoWork"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="8dp"
+                                            android:text="@string/upper_lower_workout"
+                                            android:textAppearance="?attr/textAppearanceBody2"
+                                            android:textColor="@color/blue_500"
+                                            app:layout_constraintEnd_toEndOf="parent"
+                                            app:layout_constraintStart_toStartOf="parent"
+                                            app:layout_constraintTop_toBottomOf="@+id/AllenamentoTitolo" />
+
+                                        <ImageView
+                                            android:id="@+id/StaccoImm"
+                                            android:layout_width="77dp"
+                                            android:layout_height="77dp"
+                                            android:layout_marginStart="8dp"
+                                            android:layout_marginTop="8dp"
+                                            android:layout_marginBottom="8dp"
+                                            app:layout_constraintBottom_toBottomOf="parent"
+                                            app:layout_constraintEnd_toEndOf="parent"
+                                            app:layout_constraintStart_toStartOf="parent"
+                                            app:layout_constraintTop_toBottomOf="@+id/tipoWork"
+                                            app:srcCompat="@drawable/ic_icons8_deadlift"
+                                            android:contentDescription="@string/iconastacco" />
+
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        </com.google.android.material.card.MaterialCardView>
+
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:id="@+id/scheda_avanzato"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginEnd="8dp"
+                            app:cardElevation="0dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:strokeColor="@color/blue_500"
+                            app:strokeWidth="1dp">
+
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:id="@+id/linearLayout2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                        <TextView
+                                            android:id="@+id/AllenamentoTitolo1"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="8dp"
+                                            android:text="@string/livello_avanzato"
+                                            android:textAppearance="?attr/textAppearanceHeadline6"
+                                            android:textColor="@color/blue_500"
+                                            app:layout_constraintEnd_toEndOf="parent"
+                                            app:layout_constraintStart_toStartOf="parent"
+                                            app:layout_constraintTop_toTopOf="parent" />
+
+
+                                        <TextView
+                                            android:id="@+id/tipoWork1"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="8dp"
+                                            android:text="@string/full_body_workout"
+                                            android:textAppearance="?attr/textAppearanceBody2"
+                                            android:textColor="@color/blue_500"
+                                            app:layout_constraintEnd_toEndOf="parent"
+                                            app:layout_constraintStart_toStartOf="parent"
+                                            app:layout_constraintTop_toBottomOf="@+id/AllenamentoTitolo1" />
+
+                                        <ImageView
+                                            android:id="@+id/pullImm"
+                                            android:layout_width="77dp"
+                                            android:layout_height="77dp"
+                                            android:layout_marginStart="8dp"
+                                            android:layout_marginTop="8dp"
+                                            android:layout_marginBottom="8dp"
+                                            app:layout_constraintBottom_toBottomOf="parent"
+                                            app:layout_constraintEnd_toEndOf="parent"
+                                            app:layout_constraintStart_toStartOf="parent"
+                                            app:layout_constraintTop_toBottomOf="@+id/tipoWork1"
+                                            app:srcCompat="@drawable/ic_icons8_pullups"
+                                            android:contentDescription="@string/iconapull" />
+
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        </com.google.android.material.card.MaterialCardView>
+
+                </LinearLayout>
+
+        </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

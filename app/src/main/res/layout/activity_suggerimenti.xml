@@ -1,0 +1,629 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/Titolo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:text="@string/i_nostri_consigli"
+                android:textAppearance="?attr/textAppearanceHeadline6"
+                android:textColor="@color/blue_500" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/card"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                app:cardElevation="0dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:strokeColor="@color/blue_500"
+                app:strokeWidth="1dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/linearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toTopOf="@+id/textView3"
+                    app:layout_constraintTop_toTopOf="@+id/textView3">
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/carboidratiNome"
+                        android:textAppearance="?attr/textAppearanceHeadline6"
+                        android:textColor="@color/blue_500"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/carboImm"
+                        android:layout_width="27dp"
+                        android:layout_height="27dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="4dp"
+                        app:layout_constraintEnd_toStartOf="@+id/textView4"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/carbo"
+                        android:contentDescription="@string/iconacarboidrati" />
+
+                    <TextView
+                        android:id="@+id/Riso"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/riso_basmati"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="@color/blue_500"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/carboImm" />
+
+                    <TextView
+                        android:id="@+id/RisoVenere"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="4dp"
+                        android:text="@string/riso_venere"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="@color/blue_500"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/Riso" />
+
+                    <TextView
+                        android:id="@+id/RisoRosso"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="4dp"
+                        android:text="@string/riso_rosso"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="@color/blue_500"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/RisoVenere" />
+
+                    <TextView
+                        android:id="@+id/Gallette"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="4dp"
+                        android:text="@string/gallette_mais_riso"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="@color/blue_500"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/RisoRosso" />
+
+                    <TextView
+                        android:id="@+id/CousCous"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="4dp"
+                        android:text="@string/cous_cous"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="@color/blue_500"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/Gallette" />
+
+                    <TextView
+                        android:id="@+id/Patate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="4dp"
+                        android:text="@string/patate_dolci_americane"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="@color/blue_500"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/CousCous" />
+
+                    <TextView
+                        android:id="@+id/Pasta"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="4dp"
+                        android:text="@string/pasta"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="@color/blue_500"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/Patate" />
+
+                    <TextView
+                        android:id="@+id/Farro"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="4dp"
+                        android:text="@string/farro"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="@color/blue_500"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/Pasta" />
+
+                    <TextView
+                        android:id="@+id/Friselle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="4dp"
+                        android:text="@string/friselle"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="@color/blue_500"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/Farro" />
+
+                    <TextView
+                        android:id="@+id/Gnocchi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="4dp"
+                        android:text="@string/gnocchi_di_patate_zucca"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="@color/blue_500"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/Friselle" />
+
+                    <TextView
+                        android:id="@+id/Quinoa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="4dp"
+                        android:text="@string/quinoa"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="@color/blue_500"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/Gnocchi" />
+
+                    <TextView
+                        android:id="@+id/Orzo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="4dp"
+                        android:text="@string/orzo"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="@color/blue_500"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/Quinoa" />
+
+                    <TextView
+                        android:id="@+id/Polenta"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="4dp"
+                        android:text="@string/polenta"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="@color/blue_500"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/Orzo" />
+
+                    <TextView
+                        android:id="@+id/Piadina"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="4dp"
+                        android:text="@string/piadina_tortilla"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="@color/blue_500"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/Polenta" />
+
+                    <TextView
+                        android:id="@+id/Miglio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginBottom="4dp"
+                        android:text="@string/miglio"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="@color/blue_500"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/Piadina" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/card1"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                app:cardElevation="0dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:strokeColor="@color/blue_500"
+                app:strokeWidth="1dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/CostraintLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toTopOf="@+id/textView3"
+                    app:layout_constraintTop_toTopOf="@+id/textView3">
+
+                    <TextView
+                        android:id="@+id/textView10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/proteineTitolo"
+                        android:textAppearance="?attr/textAppearanceHeadline6"
+                        android:textColor="@color/blue_500"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/proteAniImm"
+                        android:layout_width="27dp"
+                        android:layout_height="27dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="4dp"
+                        app:layout_constraintEnd_toStartOf="@+id/textView10"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/prote"
+                        android:contentDescription="@string/iconaproteine" />
+
+                    <TextView
+                        android:id="@+id/ProteAnimali"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/pollame"
+                        android:textAppearance="?attr/textAppearanceBody1"
+                        android:textColor="@color/blue_500"
+                        app:layout_constraintStart_toEndOf="@+id/Mucca"
+                        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+                    <ImageView
+                        android:id="@+id/polloImm"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView10"
+                        app:srcCompat="@drawable/ic_icons8_chicken__1_"
+                        android:contentDescription="@string/iconapollame" />
+
+                    <TextView
+                        android:id="@+id/Pollo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="120dp"
+                        android:layout_marginTop="4dp"
+                        android:text="@string/pollo"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="@color/blue_500"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/ProteAnimali" />
+
+                    <TextView
+                        android:id="@+id/Tacchino"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="120dp"
+                        android:layout_marginTop="4dp"
+                        android:text="@string/petto_fesa_di_tacchino"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="@color/blue_500"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/Pollo" />
+
+                    <TextView
+                        android:id="@+id/Carne"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/carne"
+                        android:textAppearance="?attr/textAppearanceBody1"
+                        android:textColor="@color/blue_500"
+                        app:layout_constraintStart_toEndOf="@+id/Mucca"
+                        app:layout_constraintTop_toBottomOf="@+id/Tacchino" />
+
+                    <ImageView
+                        android:id="@+id/Mucca"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/Tacchino"
+                        app:srcCompat="@drawable/mucca1"
+                        android:contentDescription="@string/iconacarne" />
+
+                    <TextView
+                        android:id="@+id/Carpaccio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="120dp"
+                        android:layout_marginTop="4dp"
+                        android:text="@string/carpaccio_di_manzo"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="@color/blue_500"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/Carne" />
+
+                    <TextView
+                        android:id="@+id/Vitello"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="120dp"
+                        android:layout_marginTop="4dp"
+                        android:text="@string/vitello"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="@color/blue_500"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/Carpaccio" />
+
+                    <TextView
+                        android:id="@+id/Cavallo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="120dp"
+                        android:layout_marginTop="4dp"
+                        android:text="@string/cavallo"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="@color/blue_500"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/Vitello" />
+
+                    <TextView
+                        android:id="@+id/RoastBeef"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="120dp"
+                        android:layout_marginTop="4dp"
+                        android:text="@string/roast_beef"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="@color/blue_500"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/Cavallo" />
+
+
+                    <TextView
+                        android:id="@+id/Pesce"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/pesce"
+                        android:textAppearance="?attr/textAppearanceBody1"
+                        android:textColor="@color/blue_500"
+                        app:layout_constraintStart_toEndOf="@+id/PesceImm"
+                        app:layout_constraintTop_toBottomOf="@+id/RoastBeef" />
+
+                    <ImageView
+                        android:id="@+id/PesceImm"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/RoastBeef"
+                        app:srcCompat="@drawable/pesce"
+                        android:contentDescription="@string/iconapesce" />
+
+                    <TextView
+                        android:id="@+id/Merluzzo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="120dp"
+                        android:layout_marginTop="4dp"
+                        android:text="@string/merluzzo"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="@color/blue_500"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/Pesce" />
+
+                    <TextView
+                        android:id="@+id/Platessa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="120dp"
+                        android:layout_marginTop="4dp"
+                        android:text="@string/platessa"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="@color/blue_500"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/Merluzzo" />
+
+                    <TextView
+                        android:id="@+id/Nasello"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="120dp"
+                        android:layout_marginTop="4dp"
+                        android:text="@string/nasello"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="@color/blue_500"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/Platessa" />
+
+                    <TextView
+                        android:id="@+id/Salmone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="120dp"
+                        android:layout_marginTop="4dp"
+                        android:text="@string/salmone_fresco_affumicato"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="@color/blue_500"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/Nasello" />
+
+                    <TextView
+                        android:id="@+id/Tonno"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="120dp"
+                        android:layout_marginTop="4dp"
+                        android:text="@string/tonno_fresco_al_naturale"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="@color/blue_500"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/Salmone" />
+
+                    <TextView
+                        android:id="@+id/Gamberetti"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="120dp"
+                        android:layout_marginTop="4dp"
+                        android:text="@string/gamberetti"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="@color/blue_500"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/Tonno" />
+
+                    <TextView
+                        android:id="@+id/Vegetariano"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/vegano"
+                        android:textAppearance="?attr/textAppearanceBody1"
+                        android:textColor="@color/blue_500"
+                        app:layout_constraintStart_toEndOf="@+id/VegeImm"
+                        app:layout_constraintTop_toBottomOf="@+id/Gamberetti" />
+
+                    <ImageView
+                        android:id="@+id/VegeImm"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/Gamberetti"
+                        app:srcCompat="@drawable/vegano"
+                        android:contentDescription="@string/iconaveg" />
+
+                    <TextView
+                        android:id="@+id/Lenticchie"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="120dp"
+                        android:layout_marginTop="4dp"
+                        android:text="@string/lenticchie"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="@color/blue_500"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/Vegetariano" />
+
+                    <TextView
+                        android:id="@+id/Ceci"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="120dp"
+                        android:layout_marginTop="4dp"
+                        android:text="@string/ceci"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="@color/blue_500"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/Lenticchie" />
+
+                    <TextView
+                        android:id="@+id/Fagioli"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="120dp"
+                        android:layout_marginTop="4dp"
+                        android:text="@string/fagioli"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="@color/blue_500"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/Ceci" />
+
+                    <TextView
+                        android:id="@+id/Seitan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="120dp"
+                        android:layout_marginTop="4dp"
+                        android:text="@string/seitan"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="@color/blue_500"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/Fagioli" />
+
+                    <TextView
+                        android:id="@+id/Tofu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="120dp"
+                        android:layout_marginTop="4dp"
+                        android:text="@string/tofu"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="@color/blue_500"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/Seitan" />
+
+                    <TextView
+                        android:id="@+id/Tempeh"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="120dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginBottom="4dp"
+                        android:text="@string/tempeh"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="@color/blue_500"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/Tofu" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
